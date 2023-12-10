@@ -70,8 +70,9 @@ class DrawerListTile extends StatelessWidget {
   final String title, icon;
   final VoidCallback press;
 
-  const DrawerListTile({Key key, this.title, this.icon, this.press})
-      : super(key: key);
+  const DrawerListTile(
+      {required this.title, required this.icon, required this.press});
+
   @override
   Widget build(BuildContext context) {
     return ListTile(

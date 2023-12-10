@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hr_management/controllers/menu_controller.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:flutter_hr_management/controllers/menu_controller.dart';
+// import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
+import 'controllers/menu_controller.dart';
 import 'pages/home_page.dart';
 
 void main() {
@@ -18,11 +19,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-          textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)),
+      // theme: ThemeData.dark().copyWith(
+      // textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)),
       home: MultiProvider(
         providers: [
-          ChangeNotifierProvider(create: (context) => MenuController()),
+          ChangeNotifierProvider(create: (context) => MenusController()),
         ],
         child: HomePage(),
       ),

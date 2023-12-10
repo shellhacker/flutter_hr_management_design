@@ -22,7 +22,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                 Icons.menu,
                 color: AppColor.black,
               ),
-              onPressed: Provider.of<MenuController>(context, listen: false)
+              onPressed: Provider.of<MenusController>(context, listen: false)
                   .controlMenu,
             ),
           Text(
